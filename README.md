@@ -9,10 +9,10 @@ QueueFlow is a high-performance, local-first queue management platform built for
 - **Manager Authentication**: Secure registration and login using JWT (HMAC-SHA256) and `bcrypt` password hashing.
 - **Multi-Queue Management**: Create, view, edit, and deactivate multiple queues under a single manager account.
 - **Deterministic Token Sequencing**: Guaranteed monotonically increasing token numbers per queue using persistent database counters.
-- **FIFO Queue Lifecycle**: Real-time position tracking ($1, 2, \dots, N$) maintaining strict First-In-First-Out ordering.
+- **FIFO Queue Lifecycle**: Real-time position tracking (1, 2, ..., N) maintaining strict First-In-First-Out ordering.
 - **Adjacent Swapping Reordering**: Instant one-step prioritized promotion or demotion of waiting customers without global queue re-indexing.
 - **Single-Server Guard**: Prevents multiple tokens from being served simultaneously in the same queue.
-- **Service & Wait Duration Calculations**: Tracks exact waiting times ($\text{called\_at} - \text{joined\_at}$) and service durations ($\text{completed\_at} - \text{called\_at}$).
+- **Service & Wait Duration Calculations**: Tracks exact waiting times (`called_at - joined_at`) and service durations (`completed_at - called_at`).
 - **Historical-Average Wait Estimation**: Dynamically calculates estimated remaining wait times based on actual past service completions.
 - **Real-Time Analytics Dashboard**: Visualizes daily token volume, completion rates, cancellation rates, and duration metrics with interactive Recharts diagrams.
 - **Responsive & Modern UI**: Built with Tailwind CSS, supporting mobile, tablet, and desktop layouts with feedback states (spinners, toasts, empty states).
