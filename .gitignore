@@ -1,0 +1,79 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+backend/venv/
+backend/.venv/
+venv/
+.venv/
+ENV/
+env/
+
+# Environment variables (never commit secrets)
+.env
+.env.local
+.env.*.local
+backend/.env
+frontend/.env
+frontend/.env.local
+
+# SQLite database (has user data)
+*.db
+*.sqlite
+*.sqlite3
+backend/queueflow.db
+
+# Node
+node_modules/
+frontend/node_modules/
+
+# Build outputs
+frontend/dist/
+frontend/build/
+*.tsbuildinfo
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+coverage/
+
+# Private docs — NOT for GitHub
+TECHNICAL_DECISIONS.md
